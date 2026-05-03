@@ -275,6 +275,23 @@ docker run -d --name 2fauth-worker \
     - **选择**：`Everyone`
 6.  其余均不需要额外配置，一直下一步到完成
 7.  将 `OAUTH_CLOUDFLARE_CLIENT_ID`、`OAUTH_CLOUDFLARE_CLIENT_SECRET`、 `OAUTH_CLOUDFLARE_REDIRECT_URI` 和 `OAUTH_CLOUDFLARE_ORG_DOMAIN` 填入环境变量。
+8. Google
+前往 Google Cloud Console，创建一个新项目。
+导航至 API & Services -> OAuth consent screen，完成基础设置。
+导航至 Credentials -> Create Credentials -> OAuth client ID。
+应用类型选择：Web application。
+Authorized redirect URIs: https://您的域名/oauth/callback
+填入环境变量：
+OAUTH_GOOGLE_CLIENT_ID
+OAUTH_GOOGLE_CLIENT_SECRET
+OAUTH_GOOGLE_REDIRECT_URI: https://您的域名/oauth/callback
+9. NodeLoc 社区
+访问 NodeLoc OAuth 设置 创建应用。
+Redirect URI: https://您的域名/oauth/callback
+填入环境变量：
+OAUTH_NODELOC_CLIENT_ID
+OAUTH_NODELOC_CLIENT_SECRET
+OAUTH_NODELOC_REDIRECT_URI: https://您的域名/oauth/callback
 
 <details>
 <summary>点击查看：Cloudflare Access OAuth 配置示意图</summary>
