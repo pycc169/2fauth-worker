@@ -277,23 +277,25 @@ docker run -d --name 2fauth-worker \
 7.  将 `OAUTH_CLOUDFLARE_CLIENT_ID`、`OAUTH_CLOUDFLARE_CLIENT_SECRET`、 `OAUTH_CLOUDFLARE_REDIRECT_URI` 和 `OAUTH_CLOUDFLARE_ORG_DOMAIN` 填入环境变量。
 
 #### 如何配置Google第三方登录（推荐）
-前往 Google Cloud Console(https://console.cloud.google.com/)，创建一个新项目。
-导航至 API & Services -> OAuth consent screen，完成基础设置。
-导航至 Credentials -> Create Credentials -> OAuth client ID。
-应用类型选择：Web application。
-Authorized redirect URIs: https://您的域名/oauth/callback
-填入环境变量：
-OAUTH_GOOGLE_CLIENT_ID
-OAUTH_GOOGLE_CLIENT_SECRET
-OAUTH_GOOGLE_REDIRECT_URI: https://您的域名/oauth/callback
+
+1. 前往 [Google Cloud Console](https://console.cloud.google.com/)，创建一个新项目。
+2. 导航至 API & Services -> OAuth consent screen，完成基础设置。
+3. 导航至 Credentials -> Create Credentials -> OAuth client ID。
+4. 应用类型选择：Web application。
+5. Authorized redirect URIs: https://您的域名/oauth/callback
+6. 填入环境变量：
+7. OAUTH_GOOGLE_CLIENT_ID
+8. OAUTH_GOOGLE_CLIENT_SECRET
+9. OAUTH_GOOGLE_REDIRECT_URI: https://您的域名/oauth/callback
 
 #### 如何配置NodeLoc 社区第三方登录（推荐） 
-访问 NodeLoc OAuth(https://nodeloc.com/account/oauth-apps) 设置 创建应用。
-Redirect URI: https://您的域名/oauth/callback
-填入环境变量：
-OAUTH_NODELOC_CLIENT_ID
-OAUTH_NODELOC_CLIENT_SECRET
-OAUTH_NODELOC_REDIRECT_URI: https://您的域名/oauth/callback
+
+- 访问 [NodeLoc OAuth](https://nodeloc.com/account/oauth-apps) 设置 创建应用。
+- Redirect URI: https://您的域名/oauth/callback
+- 填入环境变量：
+- OAUTH_NODELOC_CLIENT_ID
+- OAUTH_NODELOC_CLIENT_SECRET
+- OAUTH_NODELOC_REDIRECT_URI: https://您的域名/oauth/callback
 
 <details>
 <summary>点击查看：Cloudflare Access OAuth 配置示意图</summary>
