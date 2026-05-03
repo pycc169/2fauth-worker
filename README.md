@@ -276,6 +276,12 @@ docker run -d --name 2fauth-worker \
 6.  其余均不需要额外配置，一直下一步到完成
 7.  将 `OAUTH_CLOUDFLARE_CLIENT_ID`、`OAUTH_CLOUDFLARE_CLIENT_SECRET`、 `OAUTH_CLOUDFLARE_REDIRECT_URI` 和 `OAUTH_CLOUDFLARE_ORG_DOMAIN` 填入环境变量。
 
+8.  <details>
+<summary>点击查看：Cloudflare Access OAuth 配置示意图</summary>
+<img height="500" src="https://github.com/user-attachments/assets/1e315f8f-1932-4c90-a2d7-0edf8049529f" />
+<img height="400" src="https://github.com/user-attachments/assets/c6101ee8-f3c3-44f6-9286-f17865f8fb10" />
+</details>
+
 #### 如何配置Google第三方登录（推荐）
 
 1. 前往 [Google Cloud Console](https://console.cloud.google.com/)，创建一个新项目。
@@ -297,11 +303,7 @@ docker run -d --name 2fauth-worker \
 - OAUTH_NODELOC_CLIENT_SECRET
 - OAUTH_NODELOC_REDIRECT_URI: https://您的域名/oauth/callback
 
-<details>
-<summary>点击查看：Cloudflare Access OAuth 配置示意图</summary>
-<img height="500" src="https://github.com/user-attachments/assets/1e315f8f-1932-4c90-a2d7-0edf8049529f" />
-<img height="400" src="https://github.com/user-attachments/assets/c6101ee8-f3c3-44f6-9286-f17865f8fb10" />
-</details>
+
 
 ## 🔓 离线恢复 (Offline Recovery)
 
